@@ -499,11 +499,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-<<<<<<< Updated upstream
-# Akills
-=======
 # Skills
->>>>>>> Stashed changes
 --------------------------------------------------------------*/
 .skills h1{
   margin-bottom: 30px;
@@ -526,8 +522,6 @@ section {
   border: 2px solid #fff;
   border-radius: 10px;
 }
-<<<<<<< Updated upstream
-=======
 .servi a:hover{
   color: #2A00FF !important;
   background-color: #fff;
@@ -536,21 +530,11 @@ section {
   border: 2px solid #fff;
   border-radius: 10px;
 }
->>>>>>> Stashed changes
 
 .servi .grid-item {
   border-radius: 10px;
   float: left;
 }
-<<<<<<< Updated upstream
-.servi .grid-item:hover{ 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
-}
-.servi a:hover{
-  color:#2A00FF !important;
-  background-color: #fff;
-  border-bottom: 2px solid #fff;
-=======
 
 #portfolio-flters {
   list-style: none;
@@ -559,7 +543,6 @@ section {
 #portfolio-flters li.filter-active .grid-item{
   color: #2A00FF;
   background-color: #fff !important;
->>>>>>> Stashed changes
 }
 
 .skills .progress {
@@ -706,41 +689,7 @@ section {
   margin-bottom: 30px;
 }
 
-<<<<<<< Updated upstream
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  background: #2A00FF;
-  padding: 2px 15px;
-}
 
-.portfolio #portfolio-flters li {
-  border: 2px;
-  border-radius: 10px;
-  border-style: solid;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 18px;
-  line-height: 1.7em;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #2a00ff;
-  background-color: #fff;
-  transition: 0.3s;
-  cursor:pointer;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-=======
-
->>>>>>> Stashed changes
 
 .portfolio .portfolio-wrap {
   transition: 0.3s;
@@ -1285,11 +1234,7 @@ section {
     margin: 0px;
   }
 }
-<<<<<<< Updated upstream
-@media(max-width:576px){
-=======
 @media(max-width:992px){
->>>>>>> Stashed changes
   .portmain .responsive-iframe {
     border: none;
     display: block;
@@ -1298,11 +1243,7 @@ section {
     bottom: 0;
     right: 0;
     width: 100%;
-<<<<<<< Updated upstream
-    height: 50vh;
-=======
     height: 56vw;
->>>>>>> Stashed changes
     padding-bottom: 30px;
   }
   
