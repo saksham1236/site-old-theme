@@ -240,6 +240,7 @@ jQuery(document).ready(function($){
   $( ".collapsed" ).click(function() {
     setTimeout(function(){ 
       $('.portfolio-container').isotope('layout');
+      $(this).css({'transform' : 'rotate('+ degrees +' 90)'});
      }, 300);
   });
   $('.modal').on('hidden.bs.modal', function () {
