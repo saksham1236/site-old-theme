@@ -332,8 +332,10 @@ object {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  position: relative;
+  width: 100wh;
   height: 100vh;
+  z-index: -2;
 }
 #sketch-div{
   position:absolute;
@@ -381,17 +383,29 @@ object {
   border-bottom: 3px solid #00FFD3;
   transition: 0.2s;
 }
-
+#hero img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  height: 80%;
+  width: auto;
+  z-index: -1;
+}
 @media (min-width: 1199px){
   #hero .hero-container {
     transition: 0.3s;
     margin-left:300px;
   }
+  #hero img{
+    height:90%;
+    transform:translate(30%, -50%);
+    z-index: 1;
+
+  }
 }
 @media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
   #hero .hero-container{
     transition: 0.3s;
   }
@@ -426,10 +440,6 @@ object {
 section {
   padding-bottom: 60px;
   overflow: hidden;
-}
-
-.section-bg {
-  background: #2A00FF;
 }
 
 .section-title {
@@ -474,6 +484,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .section-title{
+  padding-top: 30px;
+}
 .about .content h3 {
   font-size: 26px;
   color: #173b6c;
