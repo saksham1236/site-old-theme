@@ -4,6 +4,20 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function loadIframe(iframeName, url, Header) {
+  document.getElementById("myModalLabel").innerHTML = Header;
+  var $iframe = $('#' + iframeName);
+  
+  if ( $iframe.length ) {
+      $iframe.attr('src',url);   
+      $("myModalLabels").html(function(n){
+        return "This p element has index: ";
+      });
+      return false;
+  }
+  return true;
+  
+}
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
