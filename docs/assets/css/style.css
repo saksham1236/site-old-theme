@@ -57,7 +57,7 @@ object {
   pointer-events:none;
 }
 #yallo {
-  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero.jpg');
+  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero3.jpg');
   background-size: cover;
   background-position-y: center;
 }

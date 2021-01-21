@@ -21,7 +21,6 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Google Fonts -->
@@ -145,56 +144,30 @@
         </div>
 
         <div id = "yallo" class="blog_item full grey_bg">
-          <a class="full_link" href = "https://www.figma.com/proto/tiKZvSjDMhTUAx6codMjhV/Untitled?node-id=1%3A2707&scaling=contain" target="_blank" rel="noreferrer noopener"></a>
+          <a class="full_link" data-toggle="modal" data-target="#ModYoung2" href = "MindG.html" onclick="return loadIframe('ifrm', this.href);" onclick="changeHead();"></a>
           <div class="abs_bg" id = "abs_bg1" style="background-image: url('assets/Projects/MindGames/Hero.jpg')"></div>
           <div class="blog_item_inner container">
               <h1>Mind Games</h1>
               <h5>Coming Soon, click this link to see the prototype</h5>
               <h6 class="date">Saksham Tandon, Christinna Fay, Alysha Hirji, Zinneerah Amir</h6>
-              
           </div>
         </div>
 
         <div id = "yallo1" class="blog_item full grey_bg">
-          <a class="full_link" data-toggle="modal" data-target="#ModYoung1" href="biophysical.html"></a>
+          <a class="full_link" data-toggle="modal" data-target="#ModYoung2" href="biophysical.html" onclick="return loadIframe('ifrm', this.href); "></a>
           <div class="abs_bg" id = "abs_bg2" style="background-image: url('assets/Projects/Biophysical/Hero.jpg')"></div>
           <div class="blog_item_inner container">
               <h1>Biophysical Journal Cover</h1>
               <h5>August, 2020</h5>
-              <h6>Dr.Yi Zuo, Saksham Tandon</h6>
+              <h6>Dr.Yi Zuo, Saksham Tandon, Charita Goyal</h6>
           </div>
         </div>
-        
-
-                <!-- Full Height Modal Right -->
-                <div class="modal fade bottom" id="ModYoung1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-
-                <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-                <div class="modal-dialog modal-top modal-dialog-scrollable" role="document">
-
-
-                  <div class="modal-content rounded">
-                    <div class="modal-header">
-                      <h4 class="modal-title w-100" id="myModalLabel">Biophysical Journal Cover</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                    <iframe class = "responsive-iframe" loading="lazy" src ="biophysical.html" ></iframe>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- Full Height Modal Right -->
       
 
                        
 
         <div id = "yallo2" class="blog_item full grey_bg">
-          <a class="full_link" href="colorb.html" data-toggle="modal" data-target="#ModYoung2"></a>
+          <a class="full_link" href="colorb.html" data-toggle="modal" data-target="#ModYoung2" onclick="return loadIframe('ifrm', this.href);"></a>
           <div class="abs_bg" id = "abs_bg3" style="background-image: url('assets/Projects/Colorb/Placement.png')"></div>
           <div class="blog_item_inner container">
               <h1>Color Blindness - Educational Animation</h1>
@@ -202,28 +175,7 @@
               <h6>Saksham Tandon</h6>
           </div>
         </div>
-                        <!-- Full Height Modal Right -->
-                        <div class="modal fade bottom" id="ModYoung2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-        
-                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-                        <div class="modal-dialog modal-top modal-dialog-scrollable" role="document">
-        
-        
-                          <div class="modal-content rounded">
-                            <div class="modal-header">
-                              <h4 class="modal-title w-100" id="myModalLabel">Biophysical Journal Cover</h4>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                            <iframe class = "responsive-iframe" loading="lazy" src ="colorb.html" ></iframe>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
+
                       <!-- Full Height Modal Right -->
 
 
@@ -243,16 +195,16 @@
             <br> Click on the items to filter work below</p>
         </div>
         <div class = "servi grid">
-          <ul id="portfolio-flters">
-          <li data-filter=".filter-3D"><div class = "grid-item"><a>3D Illustration</a></div></li>
-          <li data-filter=".filter-2D"><div class = "grid-item"><a>2D Animation</a></div></li>  
-          <li data-filter=".filter-Video"><div class = "grid-item"><a>Video Editing</a></div></li>  
-          <li data-filter=".filter-Motion"><div class = "grid-item"><a>Motion Graphics</a></div></li>  
-          <li data-filter=".filter-UX"><div class = "grid-item"><a>UX/UI Design</a></div></li>
-          <li data-filter=".filter-Sci"><div class = "grid-item"><a>Scientific Illustration</a></div></li>
-          <li data-filter=".filter-Web"><div class = "grid-item"><a>Web Design</a></div></li>
-          <li data-filter=".filter-Graphic"><div class = "grid-item"><a>Graphic Design</a></div></li>
-          <li data-filter="*" class="filter-active"><div class = "grid-item"><a>Show All</a></div></li>
+            <ul id="portfolio-flters">
+            <li data-filter=".filter-3D"><div class = "grid-item"><a>3D Illustration</a></div></li>
+            <li data-filter=".filter-2D"><div class = "grid-item"><a>2D Animation</a></div></li>  
+            <li data-filter=".filter-Video"><div class = "grid-item"><a>Video Editing</a></div></li>  
+            <li data-filter=".filter-Motion"><div class = "grid-item"><a>Motion Graphics</a></div></li>  
+            <li data-filter=".filter-UX"><div class = "grid-item"><a>UX/UI Design</a></div></li>
+            <li data-filter=".filter-Sci"><div class = "grid-item"><a>Scientific Illustration</a></div></li>
+            <li data-filter=".filter-Web"><div class = "grid-item"><a>Web Design</a></div></li>
+            <li data-filter=".filter-Graphic"><div class = "grid-item"><a>Graphic Design</a></div></li>
+            <li data-filter="*" class="filter-active"><div class = "grid-item"><a>Show All</a></div></li>
           </ul>
         </div>
         
@@ -467,16 +419,36 @@
         </div>
      </div>
     </section><!-- End Contact Section -->
-  </main><!-- End #main -->
+
+                            <!-- Full Height Modal Right -->
+      <div class="modal fade bottom" id="ModYoung2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+        <div class="modal-dialog modal-top modal-dialog-scrollable" role="document">
+
+
+          <div class="modal-content rounded">
+            <div class="modal-header">
+              <h4 class="modal-title w-100" id="myModalLabel"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <iframe name="ifrm" id="ifrm" class = "responsive-iframe" loading="lazy" src ="" ></iframe>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main><!-- End #main -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div class = "cursor"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -487,9 +459,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
-  <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
   <!-- JQuery -->
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -497,12 +468,22 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bigpicture/2.5.3/BigPicture.min.js"></script>
   <script>
-    var player;
-              function onYouTubePlayerAPIReady() {player = new YT.Player('player');}
-              //so on jquery event or whatever call the play or stop on the video.
-              //to play player.playVideo();
-              //to stop player.stopVideo();
+    function loadIframe(iframeName, url) {
+    
+    var $iframe = $('#' + iframeName);
+    if ( $iframe.length ) {
+        $iframe.attr('src',url);   
+        return false;
+    }
+    return true;
+    
+  }
+
+  function changeHead(Header){
+    document.getElementsByClassName("modal-title").innerHTML = "";
+  }
   </script>
 </body>
 

@@ -97,6 +97,9 @@ jQuery(document).ready(function($){
   const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
+
+
+
     //window hover
     $(document).ready(function(){
       $("#yallo").mousemove(function(e){
@@ -232,20 +235,16 @@ jQuery(document).ready(function($){
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
+      $("#firstlink").venobox().trigger('click');
     });
   });
-  function epss() {
-    
-    };
+  
   $( ".collapsed" ).click(function() {
     setTimeout(function(){ 
       $('.portfolio-container').isotope('layout');
       $(this).css({'transform' : 'rotate('+ degrees +' 90)'});
      }, 300);
   });
-  $('.modal').on('hidden.bs.modal', function () {
-      player.stopVideo();
-    });
   // $( ".collapsed" ).click(function() {
   //   var interval;
     
