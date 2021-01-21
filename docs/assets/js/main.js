@@ -10,14 +10,12 @@ function loadIframe(iframeName, url, Header) {
   
   if ( $iframe.length ) {
       $iframe.attr('src',url);   
-      $("myModalLabels").html(function(n){
-        return "This p element has index: ";
-      });
       return false;
   }
   return true;
   
 }
+
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -70,6 +68,7 @@ jQuery(document).ready(function($){
   }
   
   // Smooth scroll for the navigation menu and links with .scrollto classes
+
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       e.preventDefault();
