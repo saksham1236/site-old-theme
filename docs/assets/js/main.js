@@ -1,9 +1,5 @@
-/**
-* Template Name: iPortfolio - v1.4.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
 function loadIframe(iframeName, url, Header) {
   document.getElementById("myModalLabel").innerHTML = Header;
   var $iframe = $('#' + iframeName);
@@ -15,7 +11,6 @@ function loadIframe(iframeName, url, Header) {
   return true;
   
 }
-
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -68,7 +63,6 @@ jQuery(document).ready(function($){
   }
   
   // Smooth scroll for the navigation menu and links with .scrollto classes
-
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       e.preventDefault();
@@ -110,9 +104,6 @@ jQuery(document).ready(function($){
   const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
-
-
-
     //window hover
     $(document).ready(function(){
       $("#yallo").mousemove(function(e){
@@ -248,57 +239,20 @@ jQuery(document).ready(function($){
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
-      $("#firstlink").venobox().trigger('click');
     });
   });
-  
+  function epss() {
+    
+    };
   $( ".collapsed" ).click(function() {
     setTimeout(function(){ 
       $('.portfolio-container').isotope('layout');
-      $(this).css({'transform' : 'rotate('+ degrees +' 90)'});
      }, 300);
   });
-  // $( ".collapsed" ).click(function() {
-  //   var interval;
-    
-  //   var counter = 0;
-  //   clearInterval();
-  //   setInterval(function(){
-  //     $('.portfolio-container'). isotope('layout');
-  //     console.log(counter);
-  //     ++counter;
-  //     if (counter >= 100) {
-  //       clearInterval();
-  //       console.log('cleared');
-  //     }
-  //   }, 100);
-  // });
-  // $(document).one('load' , function() {
-  //   var interval;
-  //   clearInterval();
-  //   var counter = 0;
-  //  setInterval(function(){
-  //     $('.portfolio-container'). isotope('layout');
-  //     console.log(counter);
-  //     ++counter;
-  //     if (counter >= 100) {
-  //       clearInterval();
-  //       console.log('cleared');
-  //     }
-  //   }, 100);
-  // });
-  // $(function() {
-  // var windowh;
-  // windowh = $(window).height();
-  //  $('.modal-body').css('min-height', windowh - 140 + 'px');
-  // })
-  // var myFunction = function() {
-  //   $('.portfolio-container').isotope('layout');
-  // }
-  
-  // var timer =  setInterval(myFunction, 50); 
+  $('.modal').on('hidden.bs.modal', function () {
+      player.stopVideo();
+    });
 
-  // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -337,6 +291,4 @@ jQuery(document).ready(function($){
   })
   
 
-})(jQuery);
-
-
+})(jQuery)
