@@ -90,17 +90,17 @@ jQuery(document).ready(function($){
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
-    if (window.location.hash) {
-      var initial_nav = window.location.hash;
-      if ($(initial_nav).length) {
-        var scrollto = $(initial_nav).offset().top;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-      }
-    }
-  });
+  //$(document).ready(function() {
+   // if (window.location.hash) {
+     // var initial_nav = window.location.hash;
+      //if ($(initial_nav).length) {
+        //var scrollto = $(initial_nav).offset().top;
+       // $('html, body').animate({
+          //scrollTop: scrollto
+        //}, 1500, 'easeInOutExpo');
+      //}
+    //}
+ // });
   const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
