@@ -1950,5 +1950,10 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
 #blog .blog_item h1 {
     overflow: hidden;
 }
-
+.show {
+  transition: opacity 250ms ease-out;
+}
+.fade {
+  transition: opacity 250ms ease-in;
+}
 

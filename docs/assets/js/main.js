@@ -14,7 +14,7 @@ function loadIframe(iframeName, url, Header) {
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
-	
+
 	//open/close lateral navigation
 	$('.cd-nav-trigger').on('click', function(event){
 		
@@ -48,7 +48,24 @@ jQuery(document).ready(function($){
 
 !(function($) {
   "use strict";
-
+  $('#ModYoung2').on('hidden.bs.modal', function () {
+    
+    setTimeout(function loadIframe(iframeName, url, Header) {
+      document.getElementById("myModalLabel").innerHTML = Header;
+      var iframeName = 'ifrm';
+      var url = '';
+      var Header = '';
+      var $iframe = $('#' + iframeName);
+      
+      if ( $iframe.length ) {
+          $iframe.attr('src',url);   
+          return false;
+      }
+      return true;
+      
+    },150);
+  });
+  
   // Hero typed
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
