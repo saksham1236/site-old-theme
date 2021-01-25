@@ -1199,14 +1199,15 @@ section {
 .portmain h2{
   color:#000 !important;
 }
+
 .portmain .imghero{
-  display: inline;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height:100vh;
+  height: 100vh;
 }
-@media(max-width:576px){
+@media(max-width: 1200px){
   .portmain .imghero{
     display: inline;
     margin-left: auto;
