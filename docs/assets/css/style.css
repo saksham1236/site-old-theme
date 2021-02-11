@@ -1871,7 +1871,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
 }
 
 .blog_item {
-    padding: 80px 50px;
+    padding: 80px 70px;
     position: relative;
     transition: all 0.5s;
     cursor: pointer;
@@ -1893,10 +1893,10 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     padding: 40px 30px;
   }
   .blog_item h1{
-    font-size:30px;
+    font-size: 24px;
   }
   .blog_item h5{
-    text-size-adjust: auto;
+    font-size: 18px;
   }
   
 }
