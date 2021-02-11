@@ -1888,9 +1888,17 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
   font-family: "Inter", sans-serif;
 }
 @media(max-width:768px) {
+  .blog_item{
+    height: 300px;
+    padding: 40px 30px;
+  }
   .blog_item h1{
     font-size:30px;
   }
+  .blog_item h5{
+    text-size-adjust: auto;
+  }
+  
 }
 
 .blog_item .abs_bg {
