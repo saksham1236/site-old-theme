@@ -71,7 +71,15 @@ object {
   background-size: cover;
   background-position-y: center;
 }
-
+.badge {
+  margin-top: 0.7em;
+  margin-right: 5px;
+  text-shadow: none !important;
+  font-family: "Inter", sans-serif;
+  font-weight: normal !important;
+  padding: 8px;
+  border: 2px solid white;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1893,6 +1901,11 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     height: 400px;
     transition: 0.4s;
 }
+.blog_item:hover {
+  transform:scale(1.05);
+  transition: 0.4s;
+}
+
 .blog_item h1, .blog_item h5, h6 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
     transition: all 0.5s;
@@ -1922,7 +1935,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     top: 0;
     width: 100%;
     height: 100%;
-    background-size: 120%;
+    background-size: 100% auto;
     background-origin: border-box;
     background-position: center;
     background-repeat:unset;
@@ -1933,6 +1946,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     -khtml-opacity: 0;
     opacity: 0;
 }
+
 @media(max-width:768px){
   .blog_item .abs_bg {
     background-size: auto 100%;
